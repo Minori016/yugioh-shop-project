@@ -1,4 +1,4 @@
-Tuyệt vời! Đây là đoạn mô tả chi tiết của bạn, đã được dịch sang tiếng Anh và giữ nguyên các biểu tượng cảm xúc (emoji) để làm nổi bật:
+
 
 🃏 Project: E-commerce Website 🛍️ Yu-Gi-Oh! Card Shop 💳
 This is a classic ☕ Java Web Application built to function as an e-commerce platform specializing in selling 🎴 Yu-Gi-Oh! trading cards. The project is well-structured and follows the 🏛️ Model-View-Controller (MVC) architectural pattern.
