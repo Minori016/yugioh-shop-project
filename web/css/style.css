@@ -1,0 +1,185 @@
+/*
+** Style Simple Ecommerce Theme for Bootstrap 4
+** Created by T-PHP https://t-php.fr/43-theme-ecommerce-bootstrap-4.html
+*/
+.bloc_left_price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+.category_block li:hover {
+    background-color: #007bff;
+}
+.category_block li:hover a {
+    color: #ffffff;
+}
+.category_block li a {
+    color: #343a40;
+}
+.add_to_cart_block .price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+.add_to_cart_block .price_discounted {
+    color: #343a40;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: 140%;
+}
+.product_rassurance {
+    padding: 10px;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+.product_rassurance .list-inline {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product_rassurance .list-inline li:hover {
+    color: #343a40;
+}
+.reviews_product .fa-star {
+    color: gold;
+}
+.pagination {
+    margin-top: 20px;
+}
+footer {
+    background: #343a40;
+    padding: 40px;
+    margin-top: 20px;
+}
+footer a {
+    color: #f8f9fa
+}
+.bgc{
+    background-image: url(image/Clothes+and+shoes-74_banner.jpg);
+    /*background-image: url("https://envato-shoebox-0.imgix.net/a553/ba21-ce80-45ee-82d4-120907cdb414/Clothes+and+shoes-74_banner.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=a9cc1545e602fe3d3e6c9faed39f0a84");*/
+}
+.show_txt{
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+a .active{
+    color: white;
+}
+
+/* --- TCG theme tweaks --- */
+:root{
+    --tcg-accent:#7c4dff;
+    --tcg-accent-2:#00d4ff;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.card-product a {
+    color: #212529;
+}
+.card-product a:hover {
+    color: var(--tcg-accent);
+}
+
+.btn-success {
+    border-radius: .6rem;
+}
+.badge-info {
+    background: linear-gradient(135deg, var(--tcg-accent), var(--tcg-accent-2));
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    opacity:.9;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    opacity:1;
+}
+
+/* Optional: smooth hover for links */
+.navbar a, .list-group-item, .btn {
+    transition: all .18s ease;
+}
+
+/* Ẩn form Sign up khi vừa load trang */
+#logreg-forms .form-signup {
+    display: none;
+}
+
+
+/* CSS cho thông báo "Toast" */
+#cart-toast {
+    visibility: hidden; /* Ẩn ban đầu */
+    min-width: 250px;
+    background-color: #4CAF50; /* Màu xanh lá */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed; /* Luôn nằm cố định */
+    z-index: 100;
+    right: 30px;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+/* Lớp 'show' để kích hoạt animation */
+#cart-toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animation mờ dần vào và ra */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}

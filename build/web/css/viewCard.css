@@ -1,0 +1,223 @@
+/* ==============================
+   TỔNG THỂ TRANG
+============================== */
+body {
+    background-color: #f2f4f8;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* ==============================
+   CARD CHÍNH
+============================== */
+.main-card {
+    border-radius: 0.6rem;
+    border: none;
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ==============================
+   HÌNH ẢNH SẢN PHẨM (VUÔNG, CĂN GIỮA)
+============================== */
+.col-md-6:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.img-big-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    height: auto;
+    overflow: hidden;
+}
+
+/* === PHẦN ĐÃ SỬA LỖI TRÀN === */
+.img-big-wrap img {
+    width: 100%;     /* Chiếm 100% chiều rộng của cột chứa */
+    max-width: 100%; /* Đảm bảo ảnh không bao giờ rộng hơn cột chứa */
+    height: auto;    /* Cho phép chiều cao tự điều chỉnh theo tỷ lệ */
+    aspect-ratio: 1 / 1; 
+    object-fit: contain;
+    border-radius: 0.5rem; /* Giữ lại bo góc từ file gốc của bạn */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Giữ lại transition */
+}
+/* === KẾT THÚC PHẦN SỬA === */
+
+
+.img-big-wrap img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    cursor: zoom-in;
+}
+
+/* ==============================
+   TÊN SẢN PHẨM
+============================== */
+.title {
+    font-weight: 700;
+    color: #212529;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.25rem;
+}
+
+/* ==============================
+   TÊN SET
+============================== */
+.card-set-name {
+    font-weight: 600;
+    color: #c82333;
+    font-style: italic;
+    margin-top: -4px;
+    margin-bottom: 1rem;
+}
+
+/* ==============================
+   GIÁ SẢN PHẨM
+============================== */
+.price-detail-wrap .currency {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.price-detail-wrap .num {
+    font-size: 2rem;
+    color: #dc3545;
+    font-weight: 700;
+}
+
+/* ==============================
+   THUỘC TÍNH THẺ
+============================== */
+.item-property {
+    margin-bottom: 1rem;
+}
+
+.item-property dt {
+    font-weight: 600;
+    color: #495057;
+}
+
+.item-property dd {
+    margin-left: 0;
+    font-size: 1rem;
+}
+
+/* ==============================
+   Ô NHẬP SỐ LƯỢNG
+============================== */
+input[type="number"] {
+    border-radius: 0.3rem;
+    border: 1px solid #ced4da;
+    transition: all 0.2s ease;
+    padding: 0.3rem;
+    width: 90px;
+}
+
+input[type="number"]:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* ==============================
+   NÚT HÀNH ĐỘNG
+============================== */
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.button-group .btn {
+    flex-grow: 1;
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    letter-spacing: 0.5px;
+    border-radius: 0.4rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-group .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* ==============================
+   SIDEBAR DANH MỤC
+============================== */
+.category_block li a {
+    color: #343a40;
+    display: block;
+    transition: all 0.2s ease;
+    padding: 0.4rem 0.5rem;
+}
+
+.category_block li:hover {
+    background-color: #007bff;
+    border-radius: 0.25rem;
+}
+
+.category_block li:hover a {
+    color: #fff;
+    padding-left: 8px;
+}
+
+.category_block li a::before {
+    content: "• ";
+    color: #6c757d;
+}
+
+/* ==============================
+   STAFF'S PICK CARD
+============================== */
+.card.bg-light.mb-3 {
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card.bg-light.mb-3 .card-header {
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+/* ==============================
+   RESPONSIVE CHO MOBILE
+============================== */
+@media (max-width: 992px) {
+    .main-card {
+        margin-top: 1rem;
+    }
+
+    .col-md-6:first-child {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        background-color: #f9f9f9;
+    }
+
+    .img-big-wrap img {
+        /* Quy tắc này dành cho di động và máy tính bảng, nó không gây tràn */
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group .btn {
+        width: 100%;
+    }
+}

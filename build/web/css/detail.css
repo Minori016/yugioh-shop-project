@@ -1,0 +1,86 @@
+body {
+    background-color: #f8f9fa; /* Màu nền xám nhạt cho cả trang */
+}
+.main-card {
+    border-radius: .3rem;
+    border: 1px solid #dee2e6;
+}
+.img-big-wrap {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    border-right: 1px solid #dee2e6;
+}
+.img-big-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Hiển thị toàn bộ lá bài */
+    border-radius: .25rem;
+    transition: transform 0.3s ease;
+}
+.img-big-wrap img:hover {
+    transform: scale(1.05); /* Hiệu ứng zoom nhẹ khi hover */
+    cursor: zoom-in;
+}
+
+/* Thông tin chi tiết */
+.item-property {
+    margin-top: 1rem;
+}
+.item-property dt {
+    font-weight: 600;
+    color: #555;
+}
+.item-property dd {
+    margin-left: 0;
+    font-size: 1.1rem;
+}
+
+/* Tên Set (Yêu cầu của bạn) */
+.card-set-name {
+    font-weight: 600;
+    color: #c82333; /* Màu đỏ bootstrap 'danger' */
+    font-style: italic;
+    margin-top: -10px;
+    margin-bottom: 1rem;
+}
+
+/* Giá tiền */
+.price-detail-wrap .currency {
+    font-size: 1.2rem;
+    color: #6c757d; /* Màu xám bootstrap 'muted' */
+    font-weight: normal;
+}
+.price-detail-wrap .num {
+    font-size: 2.2rem; /* Làm giá to rõ */
+    font-weight: bold;
+}
+
+/* Nút bấm */
+.button-group {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa 2 nút */
+    margin-top: 1.5rem;
+}
+.button-group .btn {
+    flex-grow: 1; /* 2 nút to bằng nhau */
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+}
+
+/* Chỉnh lại link sidebar cho đẹp */
+.category_block li a {
+     color: #343a40;
+     display: block;
+     transition: all 0.2s ease;
+}
+.category_block li:hover {
+     background-color: #007bff;
+}
+.category_block li:hover a {
+     color: #ffffff;
+     padding-left: 5px;
+}
